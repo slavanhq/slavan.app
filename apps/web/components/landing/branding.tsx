@@ -7,7 +7,8 @@ export const Branding = () => {
 }
 
 function LogoBranding() {
-    return <div className="w-full h-full flex items-center justify-center bg-gradient-to-bl from-purple-900  via-pink-600 to-purple-400">
-        <div className="text-9xl lowercase">Slavan.</div>
+    return <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-t from-purple-900  via-purple-600 to-purple-500">
+        <div className="text-9xl lowercase text-white font-semibold ">Slavan.</div>
+        <div className="text-sm tracking-widest font-light capitalize">AI powered creative studio</div>
     </div>
 }
