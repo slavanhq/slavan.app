@@ -1,12 +1,16 @@
-import { Button } from "@workspace/ui/components/button"
+import { Branding } from "@/components/landing/branding"
+import { NavBar } from "@/components/landing/nav-bar"
+import { Offer } from "@/components/landing/offer"
 
 export default function Page() {
   return (
-    <div className="flex items-center justify-center min-h-svh">
-      <div className="flex flex-col items-center justify-center gap-4">
-        <h1 className="text-2xl font-bold">Hello World</h1>
-        <Button size="sm">Button</Button>
-      </div>
+    <div className="w-full">
+      <NavBar />
+      <Branding />
+      {/* <div className="w-full border-b h-4 bg-[repeating-linear-gradient(135deg,rgba(255,255,255,0.1)_0px,rgba(255,255,255,0.1)_1px,transparent_1px,transparent_8px)] absolute " /> */}
+      <Offer />
+      
+      {/* <Project /> */}
     </div>
   )
 }
