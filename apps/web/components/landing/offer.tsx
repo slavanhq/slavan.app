@@ -13,11 +13,11 @@ export const Offer = () => {
         type: "monthly retainer"
     }]
     return <div className="w-full border-b">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-5xl mx-auto">
             <div className="text-3xl font-medium border-b px-4 py-3 border-x">Offerings</div>
-            <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
+            <div className="flex flex-col">
                 {offerings.map((offer, idx) => (
-                    <div key={idx} className="flex border-b md:border-b-0 border-x relative">
+                    <div key={idx} className="flex border-b border-x relative">
                         <div className="border-r w-[50px] flex items-center justify-center">{<offer.icon size={30}/>}</div>
                         <div className="flex-1 px-4 py-3">
                             <div className="text-lg font-semibold">{offer.offer}</div>
